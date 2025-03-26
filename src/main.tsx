@@ -7,15 +7,5 @@ import { AppLayout } from './shared/components/AppLayout/AppLayout.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          {routes.map((route) => (
-            <Route path={route.path} element={route.element} key={route.id} />
-          ))}
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>
+  <StrictMode>test</StrictMode>
 );
