@@ -1,13 +1,15 @@
 import { Outlet } from 'react-router';
 import { Navigation } from '../Navigation/Navigation';
+import { Footer } from '../Footer/Footer';
 
 export const AppLayout = () => {
   return (
-    <div>
+    <div className='font-serif'>
       <Navigation />
-      <div className='bg-amber-300 h-screen flex justify-center pt-10'>
+      <div className='flex justify-center pt-16'>
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 };

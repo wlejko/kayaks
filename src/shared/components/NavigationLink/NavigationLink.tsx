@@ -11,8 +11,8 @@ export const NavigationLink = ({ name, link }: NavigationLinkProps) => {
       to={link}
       className={({ isActive }) =>
         isActive
-          ? 'active capitalize text-emerald-500 font-medium text-sm'
-          : 'capitalize text-gray-700 font-medium hover:text-emerald-500 text-sm'
+          ? 'active capitalize text-white text-sm font-bold'
+          : 'capitalize text-gray-700  hover:text-white text-sm font-bold'
       }
     >
       {name}
