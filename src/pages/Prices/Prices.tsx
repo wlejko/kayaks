@@ -1,6 +1,9 @@
 import { pricesTable } from '../../consts/pricesTable';
 import { PriceConatinsItem } from '../../shared/components/PriceContainsItem/PriceConatinsItem';
 import { SectionWrapper } from '../../shared/components/SectionWrapper/SectionWrapper';
+import kayakGreen from '../../images/KayakGreen.svg';
+import campfire from '../../images/Campfire.svg';
+import car from '../../images/Car.svg';
 
 export const Prices = () => {
   return (
@@ -34,27 +37,15 @@ export const Prices = () => {
           </h3>
           <div className='flex justify-center gap-28'>
             <PriceConatinsItem
-              icon={<img src='src\images\Car.svg' alt='car' className='h-16' />}
+              icon={<img src={car} alt='car' className='h-16' />}
               description='Transport na miejsce startu i powrót do samochodów'
             />
             <PriceConatinsItem
-              icon={
-                <img
-                  src='src\images\KayakGreen.svg'
-                  alt='kayak'
-                  className='h-16'
-                />
-              }
+              icon={<img src={kayakGreen} alt='kayak' className='h-16' />}
               description='Wynajem kajaków z osprzętem'
             />
             <PriceConatinsItem
-              icon={
-                <img
-                  src='src\images\Campfire.svg'
-                  alt='campfire'
-                  className='h-16'
-                />
-              }
+              icon={<img src={campfire} alt='campfire' className='h-16' />}
               description='Istnieje możliwość zorganizowania ogniska. Organizacja ogniska jest za dodatkową opłatą.'
             />
           </div>

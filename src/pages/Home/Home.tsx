@@ -1,6 +1,10 @@
 import { Card } from '../../shared/components/Card/Card';
 import { SectionWrapper } from '../../shared/components/SectionWrapper/SectionWrapper';
 import hero from '../../images/hero.jpg';
+import bug from '../../images/bug.jpg';
+import card1 from '../../images/card1.jpg';
+import ognisko from '../../images/ognisko.jpg';
+import jezioro from '../../images/jezioro.jpg';
 
 export const Home = () => {
   return (
@@ -18,23 +22,23 @@ export const Home = () => {
           <Card
             description='Czwarta pod względem długości rzeka w Polsce, będąca dopływem Narwi, przepływająca przez zachodnią Ukrainę, zachodnią Białoruś i wschodnią Polskę.
             Długość Bugu wynosi 772 km, a powierzchnia dorzecza 39 420 km². Z tego największa część leży na terenie Polski – 19,4 tys. km² (49,2%). Na terenie Ukrainy leży 10,8 tys. km² (27,4%) obszaru zlewni, na Białorusi natomiast 9,2 tys. km² (23,3%). Średni przepływ w dolnym biegu, w Wyszkowie, wynosi 154 m³/s, co czyni go czwartą co do wielkości rzeką Polski'
-            img='src\images\bug.jpg'
+            img={bug}
             title='Rzeka Bug'
           />
           <Card
             description='Nie musisz się martwić o sprzęt. Zapewniamy sprzęt dobrej jakości z którego każdy będzie zadowolony. Mamy dużą liczbe kajaków, nie trzeba martwić się, że komuś zabraknie. Po wcześniejszym kontakcie i ustaleniu szczegółów znajdziemy coś dla każdego miłośnika kajakowania.'
-            img='src\images\card1.jpg'
+            img={card1}
             title='Sprzęt'
             reverse
           />
           <Card
             description='Po wszystkim możemy zorganizować ognisko na którym będzie można odpocząć po ciężkim dniu spędzonym nad wodą w kajaku. '
-            img='src\images\ognisko.jpg'
+            img={ognisko}
             title='Ognisko'
           />
           <Card
             description='Jeżeli przyjechali państwo z daleko możemy za pośrednictwem zaprzyjaźnionego nam ośrodka Eko Różanka zorganizować noclegi. Należy uprzedzić wcześniej o potrzebie zorganizowania takiego noclegu ponieważ nie zawsze w ośrodku może być miejsce w okresie letnim.'
-            img='src\images\jezioro.jpg'
+            img={jezioro}
             title='Jezioro Białe'
             reverse
           />

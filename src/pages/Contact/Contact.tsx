@@ -1,5 +1,8 @@
 import { ContactItem } from '../../shared/components/ContactItem/ContactItem';
 import { SectionWrapper } from '../../shared/components/SectionWrapper/SectionWrapper';
+import smartphone from '../../images/Smartphone.svg';
+import email from '../../images/Email.svg';
+import messenger from '../../images/Messenger.svg';
 
 export const Contact = () => {
   return (
@@ -12,22 +15,12 @@ export const Contact = () => {
           <ContactItem
             description='111 111 111'
             icon={
-              <img
-                src='src\images\Smartphone.svg'
-                alt='Smartphone'
-                className='h-54 w-54'
-              />
+              <img src={smartphone} alt='Smartphone' className='h-54 w-54' />
             }
           />
           <ContactItem
             description='test@email.com'
-            icon={
-              <img
-                src='src\images\Email.svg'
-                alt='Email'
-                className='h-54 w-54'
-              />
-            }
+            icon={<img src={email} alt='Email' className='h-54 w-54' />}
           />
           <ContactItem
             description={
@@ -39,13 +32,7 @@ export const Contact = () => {
                 Nasz facebooku
               </a>
             }
-            icon={
-              <img
-                src='src\images\Messenger.svg'
-                alt='Messenger'
-                className='h-54 w-54'
-              />
-            }
+            icon={<img src={messenger} alt='Messenger' className='h-54 w-54' />}
           />
         </div>
       </section>
