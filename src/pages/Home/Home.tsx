@@ -1,11 +1,12 @@
 import { Card } from '../../shared/components/Card/Card';
 import { SectionWrapper } from '../../shared/components/SectionWrapper/SectionWrapper';
+import hero from '../../images/hero.jpg';
 
 export const Home = () => {
   return (
     <div>
       <div className='relative text-center  '>
-        <img src='./src/images/hero.jpg' className='brightness-50' alt='hero' />
+        <img src={hero} className='brightness-50' alt='hero' />
         <div className='m-0 p-0 absolute top-[70%] flex justify-center w-full text-3xl'>
           <div className='bg-emerald-400 w-72 h-72 z-10 rounded-[50%] flex items-center justify-center text-gray-700 text-3xl'>
             Spływy kajakowe po Bugu
